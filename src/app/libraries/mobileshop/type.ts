@@ -65,3 +65,12 @@ export type MobileShopCart = {
 export type Cart = Omit<MobileShopCart, "lines"> & {
   lines: CartItem[];
 };
+
+export type MobileShopCartOperation = {
+  data: {
+    cart: MobileShopCart;
+  };
+  variables: {
+    cartId: string;
+  };
+};

@@ -1,3 +1,5 @@
+'use client'
+
 import { Cart } from "@/app/libraries/mobileshop/type";
 import { createContext, useMemo } from "react";
 
